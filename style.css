@@ -1,0 +1,68 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.homePageHero {
+  /* background-color: aqua;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/1SkHMUk.png");
+  background-size: cover;
+  color: white;
+}
+
+.ollyHeroPfp {
+  width: 200px;
+  border: 10px solid white;
+  border-radius: 5px;
+}
+
+.ollyQuote {
+  font-style: italic;
+}
+
+.infoPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  width: 100%;
+}
+
+.whatIDo {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.projects {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  /* background-color: gray; */
+  border: 5px solid black;
+  background-image: ;
+}
