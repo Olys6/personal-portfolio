@@ -56,6 +56,10 @@ body {
   width: 100%;
 }
 
+.aboutMeDescription {
+  width: 500px;
+}
+
 .whatIDo {
   display: flex;
   flex-direction: row;
@@ -104,13 +108,19 @@ body {
 }
 
 .projectShow:hover {
-  transform: scale(1.2);
-  z-index: 1;
+  /* transform: scale(1.2);
+  z-index: 1; */
 }
 
 .project1Show {
+  background-image: url("https://i.imgur.com/lXzQdGs.png");
+}
+
+.project1Show:hover {
   background-image: url("https://i.imgur.com/fcdHpXR.gif");
 }
+
+
 
 .project2Show {
   background-image: url("https://i.imgur.com/LCEWD89.gif");
