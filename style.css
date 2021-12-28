@@ -114,10 +114,11 @@ body {
 
 .project2Show {
   background-image: url("https://i.imgur.com/LCEWD89.gif");
+  width: 250px;
 }
 
 .project3Show {
-  
+  background-image: url("https://i.imgur.com/XL1Wwwq.gif");
 }
 
 .checkoutBtn {
