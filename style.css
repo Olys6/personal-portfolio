@@ -2,6 +2,17 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(45,255,45);
+  background: linear-gradient(90deg, rgba(45,255,45,1) 0%, rgba(159,246,149,1) 50%, rgba(216,255,217,1) 100%); 
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+}
+
 .homePageHero {
   /* background-color: aqua;  */
   display: flex;
@@ -9,7 +20,9 @@ body {
   align-items: center;
   flex-direction: column;
   height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/1SkHMUk.png");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/1SkHMUk.png"); */
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
   background-size: cover;
   color: white;
 }
@@ -37,7 +50,9 @@ body {
   gap: 10rem;
   justify-content: center;
   align-items: center;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
+  background: rgb(64,64,64);
+  background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(255,236,204,1) 50%, rgba(64,64,64,1) 100%);  
   width: 100%;
 }
 
@@ -48,21 +63,84 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  background: rgb(64,64,64);
+  background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(149,240,246,1) 50%, rgba(64,64,64,1) 100%); 
 }
 
 .projects {
   text-decoration: none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
   width: 100%;
 }
 
-.project {
+.project1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTitle {
+  margin-bottom: 1vh;
+}
+
+.project1Show {
   text-align: center;
   width: 200px;
   height: 200px;
+  border-radius: 5px;
   /* background-color: gray; */
   border: 5px solid black;
-  background-image: ;
+  background-image: url("https://i.imgur.com/fcdHpXR.gif");
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.project1Show:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.checkoutBtn {
+  margin-top: 1vh;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.checkoutBtn:hover {
+  transform: scale(1.2);
+}
+
+.checkoutBtnText {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.project2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project2Show {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  /* background-color: gray; */
+  border: 5px solid black;
+  background-image: url("https://i.imgur.com/LCEWD89.gif");
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  transition: .2s;
 }
