@@ -108,8 +108,8 @@ body {
 }
 
 .projectShow:hover {
-  /* transform: scale(1.2);
-  z-index: 1; */
+  transform: scale(1.14);
+  z-index: 1;
 }
 
 .project1Show {
@@ -120,16 +120,23 @@ body {
   background-image: url("https://i.imgur.com/fcdHpXR.gif");
 }
 
-
-
 .project2Show {
+  background-image: url("https://i.imgur.com/jRqcYSR.png");
+  width: 280px;
+}
+
+.project2Show:hover {
   background-image: url("https://i.imgur.com/LCEWD89.gif");
-  width: 250px;
 }
 
 .project3Show {
-  background-image: url("https://i.imgur.com/XL1Wwwq.gif");
   width:350px;
+  background-image: url("https://i.imgur.com/scrGUnJ.gif");
+}
+
+.project3Show:hover {
+  background-image: url("https://i.imgur.com/XL1Wwwq.gif");
+  
 }
 
 .checkoutBtn {
