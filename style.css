@@ -320,3 +320,10 @@ hr {
     width: 400px;
   }
 }
+
+/* --------------------------- About me page ------------------------------ */
+
+.AboutMePageTitle {
+  text-align: center;
+  font-size: 30px;
+}
