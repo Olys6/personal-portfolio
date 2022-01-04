@@ -223,29 +223,29 @@ hr {
 }
 
 .project1Show {
-  background-image: url("https://i.imgur.com/lXzQdGs.png");
+  background-image: url("assets/BerserkersTrial/BerserkersTrialThumbnail.png");
 }
 
 .project1Show:hover {
-  background-image: url("https://i.imgur.com/fcdHpXR.gif");
+  background-image: url("assets/BerserkersTrial/Filmage-2021-12-16_130308.gif");
 }
 
 .project2Show {
-  background-image: url("https://i.imgur.com/jRqcYSR.png");
+  background-image: url("assets/RapidGames/RapidGamesThumbnail.png");
   width: 280px;
 }
 
 .project2Show:hover {
-  background-image: url("https://i.imgur.com/LCEWD89.gif");
+  background-image: url("assets/RapidGames/RapidGamesShowcase.gif");
 }
 
 .project3Show {
   width:330px;
-  background-image: url("https://i.imgur.com/scrGUnJ.gif");
+  background-image: url("assets/MuseumMapper/MuseumMapperThumbnail.gif");
 }
 
 .project3Show:hover {
-  background-image: url("https://i.imgur.com/XL1Wwwq.gif");
+  background-image: url("assets/MuseumMapper/MuseumMapperShowcase.gif");
   
 }
 
@@ -281,6 +281,29 @@ hr {
   flex-direction: column;
   justify-content: start;
 } 
+
+.blogPostLink {
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.blogPostLink:hover {
+  /* transform: scale(1.03) */
+  text-decoration: underline;
+}
+
+.blogPostDate {
+  opacity: 0.7;
+}
+
+.blogPostTitle {
+  font-size: 25px;
+}
+
+.blogPostSubject {
+  font-size: 13px;
+}
 
 @media screen and (max-width: 1200px) {
   .projects {

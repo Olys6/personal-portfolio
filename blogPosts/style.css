@@ -1,0 +1,128 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    background-color: rgb(30, 35, 61);
+}
+
+.links {
+    text-decoration: none;
+    transition: 1s;
+    font-size: 18px;
+    color: rgb(195, 195, 216);
+    list-style: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    border-bottom: 1px solid white;
+    /* background-color: white; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navItems {
+display: flex;
+flex-direction: row;
+gap: 5rem;
+}
+
+.navHome {
+font-size: 20px;
+list-style: none;
+color: white;
+text-decoration: none;
+}
+
+.navHome:hover {
+text-decoration: underline;
+}
+
+.navAboutMe {
+font-size: 20px;
+list-style: none;
+text-decoration: none;
+color: white;
+}
+
+.navAboutMe:hover {
+text-decoration: underline;
+}
+
+.postPageTitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.postPageHeaders {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30rem;
+    margin-top: 40px;
+}
+
+.postPageDate {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.postPageLanguagesDisplay {
+    font-size: 18px;
+}
+
+.blogPostBlogSection {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blogPostBlog {
+    margin-top: 0px;
+    text-align: left;
+    width: 600px;
+}
+
+.project1ReadmeLink {
+    color: rgb(195, 195, 216);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.project1ReadmeLink:hover {
+    text-decoration: underline;
+}
+
+.blogPageFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .postPageHeaders {
+        display: flex;
+        gap: 2rem;
+    }
+    .blogPostBlog {
+        width: 400px;
+    }
+    .blogPageFooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+}
