@@ -1,5 +1,14 @@
+html {
+  background-color: rgb(30, 35, 61);
+}
+
 body {
   font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+hr {
+  width: 90%;
 }
 
 .button {
@@ -13,25 +22,47 @@ body {
   border-radius: 5px;
 }
 
+.links {
+  text-decoration: none;
+  transition: 1s;
+  font-size: 18px;
+  color: rgb(195, 195, 216);
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
 .homePageHero {
   /* background-color: aqua;  */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   height: 500px;
   /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/1SkHMUk.png"); */
-  background: rgb(2,0,36);
+  /* background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
-  background-size: cover;
+  background-size: cover; */
   color: white;
+  width: 100%;
+  margin-bottom: -40px;
 }
 
 .ollyHeroPfp {
-  width: 200px;
-  border: 10px solid white;
+  width: 250px;
+  /* border: 10px solid white; */
   border-radius: 5px;
 }
+
+.homePageHeroNameAndQuote {
+  margin-left: 20px;
+  width: 500px;
+  text-align: left;
+  margin-right: -200px;
+}
+
+
 
 .ollyQuote {
   font-style: italic;
@@ -44,6 +75,26 @@ body {
   align-items: center;
 }
 
+#whereYouCanReachMeTitle {
+  text-align: center;
+}
+
+.linksSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+@media screen and (max-width: 620px) {
+  .linksSection {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 .aboutMe {
   display: flex;
   flex-direction: row;
@@ -51,9 +102,21 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: blanchedalmond; */
-  background: rgb(64,64,64);
-  background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(255,236,204,1) 50%, rgba(64,64,64,1) 100%);  
+  /* background: rgb(64,64,64);
+  background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(255,236,204,1) 50%, rgba(64,64,64,1) 100%);   */
   width: 100%;
+}
+
+.aboutmeHereLink {
+  font-size: 17px;
+  color: rgb(195, 195, 216);;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutMe {
+    flex-direction: column;
+    gap: 0rem;
+  }
 }
 
 .aboutMeDescription {
@@ -72,12 +135,17 @@ body {
   background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(149,240,246,1) 50%, rgba(64,64,64,1) 100%); 
 }
 
+.myProjects {
+  text-align: center;
+}
+
 .projects {
   text-decoration: none;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
   width: 100%;
 }
@@ -88,6 +156,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .projectTitle {
   margin-bottom: 1vh;
@@ -130,7 +200,7 @@ body {
 }
 
 .project3Show {
-  width:350px;
+  width:330px;
   background-image: url("https://i.imgur.com/scrGUnJ.gif");
 }
 
@@ -153,4 +223,59 @@ body {
   font-size: 20px;
   color: black;
   text-decoration: none;
+}
+
+.myBlogs {
+  text-align: center;
+}
+
+.blogPosts {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPost {
+  text-align: left;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+blogPost 
+
+@media screen and (max-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+  }
+  .projectShow {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homePageHero {
+    flex-direction: column;
+
+  }
+  .ollyHeroPfp {
+    margin-top: 10px;
+  }
+  .homePageHeroNameAndQuote {
+    margin-left: 0;
+    text-align: center;
+    margin-right: 0;
+    width: 400px;
+    /* margin-bottom: 160px; */
+  }
+  #whereYouCanReachMeTitle {
+    margin-top: 80px;
+  }
+  .aboutMeDescription {
+    width: 400px;
+  }
 }
