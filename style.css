@@ -1,10 +1,7 @@
-html {
-  background-color: rgb(30, 35, 61);
-}
-
 body {
   font-family: 'Titillium Web', sans-serif;
   color: white;
+  background-color: rgb(30, 35, 61);
 }
 
 hr {
@@ -30,6 +27,45 @@ hr {
 }
 
 .links:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  border-bottom: 1px solid white;
+  /* background-color: white; */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.navHome {
+  font-size: 20px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.navHome:hover {
+  text-decoration: underline;
+}
+
+.navAboutMe {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navAboutMe:hover {
   text-decoration: underline;
 }
 
@@ -108,7 +144,7 @@ hr {
 }
 
 .aboutmeHereLink {
-  font-size: 17px;
+  font-size: 20px;
   color: rgb(195, 195, 216);;
 }
 
@@ -121,6 +157,10 @@ hr {
 
 .aboutMeDescription {
   width: 500px;
+}
+
+.moreAboutMeLi {
+  font-size: 18px;
 }
 
 .whatIDo {
@@ -240,9 +280,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: start;
-}
-
-blogPost 
+} 
 
 @media screen and (max-width: 1200px) {
   .projects {
@@ -258,6 +296,9 @@ blogPost
 }
 
 @media screen and (max-width: 1000px) {
+  .navbar {
+    margin-bottom: 40px;
+  }
   .homePageHero {
     flex-direction: column;
 
