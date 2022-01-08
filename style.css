@@ -1,11 +1,17 @@
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   font-family: 'Titillium Web', sans-serif;
   color: white;
   background-color: rgb(30, 35, 61);
+  font-size: larger;
 }
 
 hr {
-  width: 90%;
+  color: white;
+  width: 80%;
 }
 
 .button {
@@ -52,10 +58,17 @@ hr {
   list-style: none;
   color: white;
   text-decoration: none;
+  transition: .2s;
 }
 
 .navHome:hover {
   text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.aboutMeImg {
+  width: 20px;
+  transition: .10s;
 }
 
 .navAboutMe {
@@ -63,10 +76,25 @@ hr {
   list-style: none;
   text-decoration: none;
   color: white;
+  transition: .2s;
 }
 
 .navAboutMe:hover {
   text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.navBlog {
+  font-size: 20px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.navBlog:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
 }
 
 .homePageHero {
@@ -133,14 +161,14 @@ hr {
 
 .aboutMe {
   display: flex;
-  flex-direction: row;
-  gap: 10rem;
+  flex-direction: column;
+  /* gap: 10rem; */
   justify-content: center;
   align-items: center;
   /* background-color: blanchedalmond; */
   /* background: rgb(64,64,64);
   background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(255,236,204,1) 50%, rgba(64,64,64,1) 100%);   */
-  width: 100%;
+  width: 80%;
 }
 
 .aboutmeHereLink {
@@ -195,6 +223,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 300px;
+  height: 700px;
 }
 
 
@@ -223,6 +253,7 @@ hr {
 }
 
 .project1Show {
+  width: 250px;
   background-image: url("assets/BerserkersTrial/BerserkersTrialThumbnail.png");
 }
 
@@ -249,6 +280,12 @@ hr {
   
 }
 
+.checkoutBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .checkoutBtn {
   margin-top: 1vh;
   text-decoration: none;
@@ -265,6 +302,10 @@ hr {
   text-decoration: none;
 }
 
+.projectDescription {
+  width: 100%;
+}
+
 .myBlogs {
   text-align: center;
 }
@@ -272,6 +313,9 @@ hr {
 .blogPosts {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15vw;
 }
 
 .blogPost {
@@ -280,6 +324,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  max-width: 800px;
 } 
 
 .blogPostLink {
@@ -293,6 +338,9 @@ hr {
   text-decoration: underline;
 }
 
+.blogPostText {
+}
+
 .blogPostDate {
   opacity: 0.7;
 }
@@ -303,19 +351,6 @@ hr {
 
 .blogPostSubject {
   font-size: 13px;
-}
-
-@media screen and (max-width: 1200px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: -40px;
-  }
-  .projectShow {
-    width: 350px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -339,9 +374,7 @@ hr {
   #whereYouCanReachMeTitle {
     margin-top: 80px;
   }
-  .aboutMeDescription {
-    width: 400px;
-  }
+
 }
 
 /* --------------------------- About me page ------------------------------ */
@@ -349,4 +382,143 @@ hr {
 .AboutMePageTitle {
   text-align: center;
   font-size: 30px;
+}
+
+.aboutMeDescriptionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeDescription {
+
+  width: 80%;
+  text-align: left;
+}
+
+.codeLanguageImagesSection {
+  text-align: center;
+}
+
+.directionRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.directionColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.centerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeLanguageImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: white; */
+  min-width: 60%;
+  border-radius: 5px;
+  /* color: black */
+}
+
+.logoAndName {
+  display: flex;
+  flex-direction: column;
+}
+
+.codeLanguageImage {
+  padding: 10px;
+}
+
+.logoName {
+  text-align: center;
+  color: black;
+  margin-top: -10px;
+  /* margin-bottom: -2px; */
+}
+
+.frontEndLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.BackendLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.first3backendLanguages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeLanguageImage {
+  width: 100px;
+}
+
+.interests {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 140%;
+  }
+  .ollyQuote {
+    margin-top: -40px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+    gap: 0.2rem;
+  }
+  .project {
+    width: 80%;
+    height: max-content;
+  }
+  .projectShow {
+    width: 350px;
+  }
+  .blogPosts {
+    margin-left: 0vw;
+  }
+  .aboutMeDescription {
+    width: 80%;
+  }
+  .aboutMe {
+    /* max-width: 600px; */
+    gap: 1rem;
+  }
+  .interests {
+    flex-direction: column;
+    width: 70%;
+  }
 }

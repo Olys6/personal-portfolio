@@ -13,15 +13,16 @@
 <body>
 <nav class="navbar">
     <ul class="navItems">
-        <li class="navHome" ><a class="navHome" href="./index.html"><strong>Home</strong></a></li>
-        <li class="navAboutMe"><a class="navAboutMe" href="aboutMe.html"><strong>About Me</strong></a></li>
+        <li class="navHome" ><a class="navHome" href="./index.html"><strong><i class="fas fa-home"></i> Home</strong></a></li>
+        <li class="navAboutMe"><a class="navAboutMe" href="aboutMe.html"><strong><img class="aboutMeImg" src="assets/Avatar_ghostrobe5_32x32_transparent.png" /> About Me</strong></a></li>
+        <li class="navBlog"><a class="navBlog" href="#myBlogs"><strong><i class="fas fa-file-alt"></i> My Blog</strong></a></li>
     </ul>
 </nav>
 <div class="homePageHero">
     <img class="ollyHeroPfp" src="assets/OllyPFP.jpg" />
     <div class="homePageHeroNameAndQuote">
         <h1>Oliver Skjevesland</h1>
-        <p class="ollyQuote">“My goal is to improve and learn new skills with IT-based work experience allowing me to develop programs that will be helpful in everyday life.”</p>
+        <p class="ollyQuote">"My goal is to improve and learn new skills with IT-based work experience allowing me to develop programs that will be helpful in everyday life."</p>
     </div>
 </div>
 <div class="infoPage">
@@ -35,14 +36,25 @@
     </div>
     <hr />
     <div class="aboutMe">
-        <h2>About me</h2>
-        <ul class="aboutMeDescription">
+        <!-- <h2>About me</h2> -->
+        <!-- <ul class="aboutMeDescription">
             <li>I'm a junior software engineer who has a serious passion for making my ideas come to life.</li>
             <li>I want to make software for people to use in day to day life.</li>
             <li>I pick user interface above all else.</li>
             <li>I challenge myself to become a better programmer almost everyday.</li>
             <li class="moreAboutMeLi"><strong>I have a more detailed page about me <a class="aboutmeHereLink" href="html/aboutMe.html">here</a></strong></li>
-        </ul>
+        </ul> -->
+        <p class="aboutMeDescription">
+        I was a self-learning web developer for around two years finding out what suits me and finding that front-end development was the most interesting for me.
+        What sparked my interest was bringing my ambitious and creative ideas to life.
+        </p>
+        <p class="aboutMeDescription">
+            My motivation comes from my drive of figuring out a problem and learn from it.
+            Collaborating with others gets me excited to learn from them and bring new ideas.
+        </p>
+        <p class="aboutMeDescription">
+        I am looking to become a junior software engineer with a well-coordinated team to work with.
+        </p>
     </div>
     <hr />
     <!-- <div class="whatIDo">
@@ -56,49 +68,102 @@
         <li class="project columnLeft">
             <h3 class="projectTitle">Project 1: Berserkers Trial</h3>
             <div class="projectShow project1Show"></div>
-            <a class="checkoutBtn" href="https://olys6.github.io/Berserkers-Trial/" target="_blank">
-                <div class="button">
-                    <p class="checkoutBtnText">Check out!</p>
-                </div>
-            </a>
+            <div class="checkoutBtns">
+                <a class="checkoutBtn" href="https://olys6.github.io/Berserkers-Trial/" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">Check out!</p>
+                    </div>
+                </a>
+                <a class="checkoutBtn" href="https://github.com/Olys6/SEI-Project1#readme" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">ReadMe</p>
+                    </div>
+                </a>
+            </div>
+            <p> 1 week / Solo </p>
+            <p class="projectDescription">
+                I worked on a classic grid based game with HTML, JavaScript and CSS.
+                I chose Pac-man and I got to learn and get a better understanding of JavaScript as well as CSS from this experience.
+            </p>
         </li>
         <li class="project columnLeft">
             <h3 class="projectTitle">Project 2: Rapid Games</h3>
             <div class="projectShow project2Show"></div>
-            <a class="checkoutBtn" href="https://rapidgames.netlify.app" target="_blank">
-                <div class="button">
-                    <p class="checkoutBtnText">Check out!</p>
-                </div>
-            </a>
+            <div class="checkoutBtns">
+                <a class="checkoutBtn" href="https://rapidgames.netlify.app" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">Check out!</p>
+                    </div>
+                </a>
+                <a class="checkoutBtn" href="https://github.com/Olys6/FreeGames/tree/main#readme" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">ReadMe</p>
+                    </div>
+                </a>
+            </div>
+            <p> 48 Hours / Duo </p>
+            <p class="projectDescription">
+                I worked with a classmate with the freetogame API and made a website using React to help the user find a free game to play.
+                In this project I learnt a lot about JS fundamentals and logic.
+            </p>
         </li>
         <li class="project">
             <h3 class="projectTitle">Project 3: Museum Mapper</h3>
             <div class="projectShow project3Show" ></div>
-            <a class="checkoutBtn" href="https://museum-mapper.herokuapp.com/" target="_blank">
-                <div class="button">
-                    <p class="checkoutBtnText">Check out!</p>
-                </div>
-            </a>
+            <div class="checkoutBtns">
+                <a class="checkoutBtn" href="https://museum-mapper.herokuapp.com/" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">Check out!</p>
+                    </div>
+                </a>
+                <a class="checkoutBtn" href="https://github.com/Olys6/SEI-Project-3#readme" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">ReadMe</p>
+                    </div>
+                </a>
+            </div>
+            <p> 1 week / Group of 4 </p>
+            <p class="projectDescription">
+                I made a website for finding museums in England using React and MongoDB in a group of 4.
+                My group and I pair coded the back-end and we later worked separately on the front-end.
+                This project made me learn a lot about CSS and HTML as I focused a lot on styling.
+            </p>
         </li>
         <li class="project">
             <h3 class="projectTitle">Project 4: PC Enthusiasts</h3>
             <div class="projectShow"></div>
-            <a class="checkoutBtn" href="https://rapidgames.netlify.app" target="_blank">
-                <div class="button">
-                    <p class="checkoutBtnText">Check out!</p>
-                </div>
-            </a>
+            <div class="checkoutBtns">
+                <a class="checkoutBtn" href="https://rapidgames.netlify.app" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">Not deployed</p>
+                    </div>
+                </a>
+                <a class="checkoutBtn" href="https://github.com/Olys6/PC-Enthusiasts/tree/main#readme" target="_blank">
+                    <div class="button">
+                        <p class="checkoutBtnText">ReadMe</p>
+                    </div>
+                </a>
+            </div>
+            <p> 1 week / Solo </p>
+            <p class="projectDescription">
+                I created a website with React as my front-end and Django as my back-end.
+                The website allows you to create different computer builds from a range of components if you are logged in.
+            </p>
         </li>
     </ul>
 </section>
 <hr />
-<section class="myBlogs">
+<section id="myBlogs" class="myBlogs">
     <h2>My Blog</h2>
     <ul class="blogPosts">
 
+
+
+        <!-- Put more blogs above this line -->
+
         <li class="blogPost">
             <a class="blogPostLink" href="blogPosts/project1Post.html">
-                <p ><span class="blogPostDate">8 October, 2021</span>
+                <p class="blogPostText"><span class="blogPostDate">8 October, 2021</span>
                 <br>
                 <span class="blogPostTitle"><strong>Berserkers Trial: My very first project created and deployed.</strong></span>
                 <br>
