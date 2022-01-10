@@ -216,6 +216,7 @@ hr {
   align-items: center;
   gap: 3rem;
   width: 100%;
+  margin-left: -40px;
 }
 
 .project {
@@ -225,12 +226,13 @@ hr {
   align-items: center;
   width: 300px;
   height: 700px;
+  margin-top: -80px;
 }
 
 
 
 .projectTitle {
-  margin-bottom: 1vh;
+
 }
 
 .projectShow {
@@ -270,14 +272,26 @@ hr {
   background-image: url("assets/RapidGames/RapidGamesShowcase.gif");
 }
 
+.project3 {
+  margin-top: -22px;
+}
+
 .project3Show {
   width:330px;
   background-image: url("assets/MuseumMapper/MuseumMapperThumbnail.gif");
 }
 
 .project3Show:hover {
-  background-image: url("assets/MuseumMapper/MuseumMapperShowcase.gif");
-  
+  background-image: url("assets/MuseumMapper/MuseumMapperShowcase.gif"); 
+}
+
+.project4Show {
+  width: 300px;
+  background-image: url("assets/PCEnthusiasts/Thumbnail.gif");
+}
+
+.project4Show:hover {
+  background-image: url("assets/PCEnthusiasts/Presentation.gif");
 }
 
 .checkoutBtns {
@@ -502,7 +516,11 @@ hr {
   }
   .project {
     width: 80%;
+    margin-top: 0;
     height: max-content;
+  }
+  .project3 {
+    margin-top: 0;
   }
   .projectShow {
     width: 350px;
