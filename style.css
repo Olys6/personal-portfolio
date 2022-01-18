@@ -211,12 +211,11 @@ hr {
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  align-items: baseline;
+  gap: 2rem;
   width: 100%;
   margin-left: -40px;
+  justify-content: space-around;
 }
 
 .project {
@@ -229,7 +228,9 @@ hr {
   margin-top: -80px;
 }
 
-
+.project1 {
+  margin-right: -10px;
+}
 
 .projectTitle {
 
@@ -465,7 +466,7 @@ hr {
   flex-direction: column;
   border: 1px solid black;
   border-radius: 5px;
-  width: 100%;
+  width: 60%;
   background-color: white;
 }
 
@@ -475,7 +476,7 @@ hr {
   align-items: center;
   border: 1px solid black;
   border-radius: 5px;
-  width: 100%;
+  width: 60%;
   background-color: white;
 }
 
@@ -519,6 +520,9 @@ hr {
     margin-top: 0;
     height: max-content;
   }
+  .project1 {
+  margin-right: 0;
+  }
   .project3 {
     margin-top: 0;
   }
@@ -539,4 +543,5 @@ hr {
     flex-direction: column;
     width: 70%;
   }
+
 }
